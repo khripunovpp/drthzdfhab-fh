@@ -6,6 +6,9 @@
 		display: none
 
 @media only screen and (max-width : 991px)
+	body
+		font-size: 15px
+
 	.container
 		max-width: 640px
 		padding: 0 10px
@@ -43,3 +46,53 @@
 	.b-main
 		&__sidebar
 			display: none
+
+	.b-content
+		padding: 15px 15px 25px
+		&__title
+			font-size: 20px
+
+	.b-quote
+		padding: 15px
+		margin: 15px 0 30px
+		margin-left: -30px
+		transform: translateX(15px)
+		&__img
+			margin: 15px auto -30px
+			&--desktop
+				display: none
+			&--mobile
+				display: block
+				float: none
+
+	.b-product
+		margin-top: 50px
+		&__title
+			font-size: 22px
+
+	.b-test
+		&__question
+			font-size: 15px
+			margin-top: 8px
+		&__answers
+			&.selected
+				.b-test
+					&__answer
+						animation-name: none
+						&::after
+							display: block
+		&__answer
+			padding-left: 45px
+			&::after
+				display: none
+				right: auto
+				left: 10px
+		&__peoples
+			display: block
+			margin: 10px 0 0
+
+	.b-comments
+		padding: 25px 15px 15px
+		&__item
+			&:nth-child(-n+3)
+				display: none
